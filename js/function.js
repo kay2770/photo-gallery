@@ -12,26 +12,13 @@
 */
 
 //준비핸들러
-// $(document).ready(function () {
-// 	$('ul>li>a').on('click', function (evt) {
-// 		evt.preventDefault();
-
-// 		const imgSrc = $(this).attr('href');
-// 		$('section>img').attr({
-// 			src: imgSrc,
-// 		});
-// 	});
-// });
-
 $(document).ready(function () {
-	$('ul>li>a')
-		.eq(3)
-		.on('click', function (evt) {
-			evt.preventDefault();
+	$('ul>li>a').on('click', function (evt) {
+		evt.preventDefault();
 
-			const imgSrc = $(this).attr('href');
-			$('section>img').attr({
-				src: imgSrc,
-			});
+		const imgSrc = $(this).attr('href');
+		$('section>img').attr({
+			src: imgSrc,
 		});
+	});
 });
